@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>Donation</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../libs/angular-material.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-app="app">
+    <div ng-controller="appController" layout="row">
+        <div flex="30"></div>
+        <div flex="40">
+            <div>
+                <md-card style="margin-top:100px;">
+                    <div class="custom-tooltip progress" data-toggle="tooltip" data-placement="top" title="" data-original-title=" ${{rest_amount}} still needed for this project">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" progressbar total="1000" current="myCurrent"> <span class="sr-only"></span>
+                        </div>
+                    </div>
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline"> <span style="color:#F15E34;">Only 3 days left </span> to fund this project</span>
+                            <span class="md-headline" style="margin-top:15px;">join the 42 other donors who have already supported this project. Every dollar helps.</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-actions layout="row" layout-align="center center">
+                        <div flex="5"></div>
+                        <div flex="45">
+                            <span class="dollar_symbol">$</span>
+                            <input type="number" class="amount" ng-model="donationAmount" value=50 />
+                        </div>
+                        <div flex="45">
+                            <button class="button_position give_now" ng-click="addCost()">Give Now</button>
+                        </div>
+                    </md-card-actions>
+                    <div layout="row">
+                        <div flex="50" class="why_give">Why Give $50 ? </div>
+                    </div>
+                </md-card>
+            </div>
+
+            <div layout="row">
+                <div flex="45" class="dialog-demo-content" id="popupContainer">
+                    <md-button class="button_position" style="width: 100%;" ng-click="showAlert($event)">Save for later
+                    </md-button>
+                </div>
+                <div flex="5"></div>
+                <div flex="50">
+                    <md-button class="button_position" style="width: 94%;" ng-click="postTweet()" id="btnTweet">
+                        Tell your friends
+                    </md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../libs/jquery.min.js"></script>
+<script src="../libs/angular.min.js"></script>
+<script src="../libs/angular-animate.min.js"></script>
+<script src="../libs/angular-aria.min.js"></script>
+<script src="../libs/angular-material.min.js"></script>
+<script src="../libs/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="libs/bootstrap.min.css">
+
+<!-- Tooltip cdn -->
+<!--    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>    -->
+<!--    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+
+</html>

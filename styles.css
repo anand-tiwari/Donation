@@ -1,0 +1,110 @@
+/*----------progress bar ------------------------------------------*/
+.progress{
+    height: 28px !important;
+    border: 2px solid #DBDBDB !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+}
+.progress-bar-warning {
+    background-color: #F15E34 !important;
+}
+
+/* -------input box for donation ammount ---------------------------*/
+.dollar_symbol{
+    position: relative;
+    left: 20px;
+    font-size: 23px;
+    font-weight: 700;
+}
+.amount{
+    height: 50px;
+    width: 83%;
+    font-size: 30px;
+    margin-top: 3px;
+    padding: 35px 20px;
+    border: 2px solid #DBDBDB;
+    border-radius: 5px;
+    box-shadow: -1px 1px 0px 0px #ccc;
+    
+}
+
+input:focus { 
+    border: 2px solid #DBDBDB !important;
+}
+
+/*-----------------  angular material md-card ------------------------*/
+md-card.md-default-theme, md-card {
+    border: 1px solid #DBDBDB;
+    border-radius: 0px;
+}
+.md-headline {
+    line-height: 44px;
+    margin-left: 20px;
+}
+.md-heading{
+    font-size: 27px;
+    font-weight: 600;
+}
+.md-button{
+    text-transform: none;
+}
+
+/* ------------- button styling and positon -------------------------*/
+.button_position{
+    height: 68px;
+    width: 75%;
+    border: 2px solid #DBDBDB;
+    border-radius: 4px;
+    color: #767676;
+    -moz-box-shadow: -1px 1px 0px 0px  #ccc;
+    -webkit-box-shadow: -1px 1px 0px 0px  #ccc;
+    box-shadow: -1px 1px 0px 0px  #ccc;
+    background-color: #F9F9F9;
+    font-weight: 700;
+    font-size: 23px;
+}
+/*------------  donation button --------------------------------------*/
+.give_now{
+    background-color: #00BD24;
+    box-shadow: 1px 3px 3px 0px #00BD24 !important;
+    border: 5px solid #00BD24 !important;
+    height: 78px;
+    color: white;
+    width: 92%;
+}
+
+/* --- text message  why give ?? -------------------------------------*/
+.why_give{
+    font-size: 26px;
+    margin-left: 33px;
+    color: #18A1D5;
+    padding: 20px;
+}
+
+
+/* ---------------tooltip css -----------------------------------------*/
+.custom-tooltip + .tooltip > .tooltip-inner {background-color: gray;
+min-height: 40px !important;
+min-width: 535px !important;
+margin-left: -265px !important;
+font-size: 23px;
+background-color: black;
+color: white;
+font-weight: 700;
+    padding: 20px 0px;
+}
+.custom-tooltip +.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  margin-left:0px;
+  border-bottom-color: #414141; /* black */
+  border-width: 5px 5px 0px;
+}
+.custom-tooltip + .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 10%;
+  margin-left: -5px;
+  border-bottom-color: #414141; /* black */
+  border-width: 20px 20px 20px;
+}
