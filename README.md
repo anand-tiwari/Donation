@@ -1,5 +1,7 @@
 # Donation
 
-1. clone or download the repository
-2. open folder using any editor (i used brackets editor)
-3. then run the app
+To run the app online-
+go to setting -
+GitHub Pages
+ Your site is published at  https://anand-tiwari.github.io/Donation/
+ open the link 
